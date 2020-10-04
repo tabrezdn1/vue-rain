@@ -1,12 +1,30 @@
 {
   "name": "vue-rain",
+  "author": {
+    "name": "Saik Tabrez",
+    "email": "tabrezdn1@gmail.com"
+  },
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "main": "./dist/rain.common.js",
+  "unpkg": "./dist/rain.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-package": "vue-cli-service build --target lib --name rain ./src/components/VueRain.vue"
   },
+  "keywords": [
+    "vue",
+    "vue-js",
+    "rain"
+  ],
+  "description": "A package made for fun to simulate the effect of rain. Basically this component accepts slots and render them in raining animation.",
+  "repository": "github:tabrezdn1/vue-rain",
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
